@@ -1,0 +1,7 @@
+{
+  "NODE_ENV": "development",
+  "PORT": 3000,
+  "ENABLE_CONSOLE_LOGS_IN_TEST": "false",
+  "ENABLE_CONSOLE_LOGS_IN_PROD": "false", 
+  "ENABLED_REQUEST_LOGGING": "true"
+}

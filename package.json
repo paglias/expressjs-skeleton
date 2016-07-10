@@ -1,0 +1,40 @@
+{
+  "name": "expressjs-skeleton",
+  "version": "1.0.0",
+  "description": "An ExpressJS skeleton app.",
+  "scripts": {
+    "start": "babel-node ./src",
+    "start-watch": "nodemon --exec babel-node --watch src ./src",
+    "start-production": "npm run build && NODE_ENV=production node ./build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
+    "build": "babel src --out-dir build",
+    "build-watch": "babel src --watch --out-dir build"
+  },
+  "author": "Matteo Pagliazzi <matteopagliazi@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "engines": {
+    "node": "^6.0.9",
+    "npm": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash.isplainobject": "^4.0.4",
+    "lodash.omit": "^4.3.0",
+    "morgan": "^1.7.0",
+    "nconf": "^0.8.4",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
+    "eslint": "^3.0.1",
+    "eslint-config-paglias": "git+https://github.com/paglias/eslint-config-paglias.git#0.1.3",
+    "eslint-plugin-babel": "^3.3.0",
+    "nodemon": "^1.9.2"
+  }
+}
